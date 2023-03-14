@@ -1,0 +1,62 @@
+package com.jdy1787.myblog.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.jdy1787.myblog.dto.BlogDTO;
+import com.jdy1787.myblog.utils.DBHelper;
+
+public class BlogDAO implements IBlogDAO {
+
+	private PreparedStatement pstmt;
+	private ResultSet rs;
+
+	private Connection conn;
+
+	public BlogDAO() {
+		conn = DBHelper.getInstance().getConnection();
+	}
+
+	@Override
+	public void select() {
+
+	}
+
+	@Override
+	public BlogDTO select(int id) {
+		
+		BlogDTO boardDTO =null;
+		
+		String query = " SELECT * FROM board " + " WHERE id = ? ";
+		try {
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				boardDTO = new BlogDTO();
+				
+				boardDTO.setId(rs.getInt("id"));
+				boardDTO.setTitle(rs.getString("title"));
+				boardDTO.setContent(rs.getString("content"));
+				boardDTO.setReadCount(rs.getInt("readCount"));
+				boardDTO.setUserId(rs.getInt("userId"));
+				
+			}
+		} catch (SQLException e) {
+			System.out.println(">> BlogDAO SELECT(int id) 에러 발생 << ");
+			e.printStackTrace();
+		}
+		return boardDTO;
+	}
+
+	@Override
+	public int delect(int boardId) {
+		int resultRow = 0;
+		String sql = " DELETE FROM board "
+				+ " WHERE id = ? ";
+		return resultRow;
+	}
+
+}

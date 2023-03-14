@@ -1,0 +1,31 @@
+package com.jdy1787.myblog.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.jdy1787.myblog.utils.DBHelper;
+
+
+public class BlogDAO implements IBlogDAO {
+
+	private PreparedStatement pstmt;
+	private ResultSet rs;
+	
+	@Override
+	public void select() {
+
+	}
+
+	@Override
+	public void select(int id) {
+		String query = " SELECT * FROM board "
+				+ " WHERE id = ? ";
+		pstmt = DBHelper.getInstance().getConnection()
+	}
+
+	@Override
+	public void delect() {
+
+	}
+
+}

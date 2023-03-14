@@ -52,7 +52,8 @@ public class DBHelper {
 				e.printStackTrace();
 			}
 		}
-		
+		// DB안에서 주소 찍어보기 (todo 추후 삭제 예정)
+		// System.out.println("DB안에서 주소 찍어보기"+this);
 		return conn;
 	}
 

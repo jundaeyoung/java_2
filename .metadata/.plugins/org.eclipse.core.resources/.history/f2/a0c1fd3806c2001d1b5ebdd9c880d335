@@ -1,0 +1,8 @@
+package com.jdy1787.myblog.dao;
+
+public interface IBlogDAO {
+
+	void select();
+	void delect();
+	
+}

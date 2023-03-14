@@ -1,0 +1,20 @@
+package com.jdy1787.myblog.dao;
+
+public class BlogDAO implements IBlogDAO {
+
+	@Override
+	public void select() {
+
+	}
+
+	@Override
+	public void select(int id) {
+
+	}
+
+	@Override
+	public void delect() {
+
+	}
+
+}

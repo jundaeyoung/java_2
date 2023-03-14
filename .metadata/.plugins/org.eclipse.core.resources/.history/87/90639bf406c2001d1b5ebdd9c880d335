@@ -1,0 +1,10 @@
+package com.jdy1787.myblog.dto;
+
+public class BoardDTO {
+
+	private int id;
+	private String title;
+	private String content;
+	private int readCount;
+	private int userId;
+}

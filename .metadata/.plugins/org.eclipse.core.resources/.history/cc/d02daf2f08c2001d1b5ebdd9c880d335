@@ -1,0 +1,44 @@
+package com.jdy1787.myblog.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.jdy1787.myblog.utils.DBHelper;
+
+public class BlogDAO implements IBlogDAO {
+
+	private PreparedStatement pstmt;
+	private ResultSet rs;
+
+	private Connection conn;
+
+	public BlogDAO() {
+		conn = DBHelper.getInstance().getConnection();
+	}
+
+	@Override
+	public void select() {
+
+	}
+
+	@Override
+	public void select(int id) {
+		String query = " SELECT * FROM board " + " WHERE id = ? ";
+		try {
+			pstmt = conn.prepareStatement(query);
+			
+		} catch (SQLException e) {
+			System.out.println(">> BlogDAO SELECT(int id) 에러 발생 << ");
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void delect() {
+
+	}
+
+}

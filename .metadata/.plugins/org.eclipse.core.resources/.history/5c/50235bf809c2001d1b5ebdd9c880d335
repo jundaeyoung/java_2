@@ -1,0 +1,7 @@
+package com.jdy1787.myblog.service;
+
+public class BlogService {
+
+	//하나의 게시글 찾는 로직 만들기
+	public BlogDTO
+}
