@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.utils.DBHelper"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Result"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.dto.BoardDTO"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.dao.IBlogDAO"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.dao.BlogDAO"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.controller.BlogController"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.dto.BlogDTO"/>
+    <fullyQualifiedTypeName name="com.jdy1787.myblog.service.BlogService"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
+    <fullyQualifiedTypeName name="utils.DBHelper"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.controller.AController"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.service.AService"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.dao.ADao"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.service.UserService"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.dto.UserDto"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.controller.UserController"/>
+    <fullyQualifiedTypeName name="com.jdy.blog.dao.UserDao"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.dao.ICafeDAO"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.service.CafeService"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.utils.DBHelper"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.controller.CafeController"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.dao.CafeDAO"/>
+    <fullyQualifiedTypeName name="com.jdy1787.mycafe.dto.CafeDTO"/>
+</qualifiedTypeNameHistroy>
