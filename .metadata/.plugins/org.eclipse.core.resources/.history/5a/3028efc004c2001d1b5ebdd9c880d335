@@ -48,7 +48,7 @@ public class DBHelper {
 				conn = DriverManager.getConnection(url,DB_USER_NAME,DB_PASSWORD);
 				System.out.println(">>DB 연결 완료<<");
 			} catch (Exception e) {
-				System.out.println(">> DBHelper 에서 오류가 발생했어. <<");
+				System.out.println(">>DBHelper 에서 오류가 발생했어.<<");
 				e.printStackTrace();
 			}
 		}

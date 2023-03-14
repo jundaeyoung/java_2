@@ -1,7 +1,6 @@
 package com.jdy1787.myblog.utils;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 // mysql 서버와 연결을 해주는 객체
@@ -38,20 +37,6 @@ public class DBHelper {
 	}
 
 	public Connection getConnection() {
-		if(conn == null) {
-			//한번도 생성하지 않았다면
-			String urlFormat = "jdbc:mysql://%s:%s/%s?serverTimezone=Asia/Seoul&characterEncoding=%s";
-			String url = String.format(urlFormat, DB_HOST, DB_PORT, DB_DATABASE_NAME, DB_CHARSET);
-			
-			try {
-				Class.forName("com.mysql.cj.jdbc.Driver");
-				conn = DriverManager.getConnection(url,DB_USER_NAME,DB_PASSWORD);
-				System.out.println(">>DB 연결 완료<<");
-			} catch (Exception e) {
-				System.out.println(">> DBHelper 에서 오류가 발생했어. <<");
-				e.printStackTrace();
-			}
-		}
 		
 		return conn;
 	}
