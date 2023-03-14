@@ -25,4 +25,9 @@ public class CafeController {
 		int responseRow = cafeService.insertUserName(name);
 		return responseRow;
 	}
+	
+	public int requestUpdateUserName(String name,String targetName) {
+		int responseRow = cafeService.updateUserName(name,targetName);
+		return responseRow;
+	}
 }

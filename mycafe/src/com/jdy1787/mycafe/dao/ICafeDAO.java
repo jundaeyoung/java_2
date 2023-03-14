@@ -9,4 +9,6 @@ public interface ICafeDAO {
 	int delete(String name);
 	
 	int insert(String name);
+	
+	int update(String name, String targetName);
 }

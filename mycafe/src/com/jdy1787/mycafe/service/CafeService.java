@@ -45,4 +45,19 @@ public class CafeService {
 		}
 		return resultRow;
 	}
+	
+	public int updateUserName(String name, String targetName) {
+		int resultRow = 0;
+		
+		CafeDTO cafeDTO = selectByUserName(name);
+		if(cafeDTO != null) {
+			String cafeWriterName = cafeDTO.getName();
+			if(name.equals(cafeWriterName)) {
+				resultRow = cafeDAO.update(name,targetName);
+			}
+		}else {
+			System.out.println("해당 이름이 없습니다.");
+		}
+		return resultRow;
+	}
 }

@@ -80,4 +80,25 @@ public class CafeDAO implements ICafeDAO {
 		
 		return resultRow;
 	}
+
+	@Override
+	public int update(String name, String targetName) {
+		int resultRow = 0;
+		String sql = " UPDATE cafe "
+				+ " SET name = ? "
+				+ " WHERE name = ? ";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, targetName);
+			pstmt.setString(2, name);
+			resultRow = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			System.out.println("cafeDAO update실행 에러 발생");
+			e.printStackTrace();
+		}
+		
+		return resultRow;
+	}
+	
 }
