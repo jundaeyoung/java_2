@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/myblog/src/com/jdy1787/myblog/MainTest1.java"/>
+        <listEntry value="/myblog2/src/com/jdy/blog/MainTest1.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.jdy1787.myblog.MainTest1"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="myblog"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="myblog"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.jdy.blog.MainTest1"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="myblog2"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="myblog2"/>
 </launchConfiguration>
