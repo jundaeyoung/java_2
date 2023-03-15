@@ -12,12 +12,14 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
+import ch01.Todo;
+
 public class MainTest {
 	public static void main(String[] args) {
 
 		URL url;
 		try {
-			url = new URL("https://jsonplaceholder.typicode.com/users/1");
+			url = new URL("https://jsonplaceholder.typicode.com/users");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.connect();
@@ -28,20 +30,26 @@ public class MainTest {
 				String line = null;
 				StringBuffer sb = new StringBuffer();
 				while ((line = reader.readLine()) != null) {
-					sb.append(line + "\n");
+					sb.append(line);
 				}
 
 				String str = sb.toString();
 //				System.out.println(sb.toString());
 //				System.out.println(str);
 				Gson gson = new Gson();
+				
+				Type listType = new TypeToken<List<User>>(){}.getType();
+				ArrayList<User> todoList = gson.fromJson(str, listType);
+				for (User user : todoList) {
+					System.out.println(user.toString());
+				}
+//				User user = gson.fromJson(str, User.class);
 
-				User user = gson.fromJson(str, User.class);
-
-				System.out.println(user.getAddress().city);
-				System.out.println(user.getAddress().getGeo().lat);
-				System.out.println(user.getAddress().getGeo().lng);
-				System.out.println(user.getCompany().name);
+				
+//				System.out.println(user.getAddress().city);
+//				System.out.println(user.getAddress().getGeo().lat);
+//				System.out.println(user.getAddress().getGeo().lng);
+//				System.out.println(user.getCompany().name);
 //				JsonObject jsonObject = new JsonObject();
 //				jsonObject.addProperty("id", user.getId());
 //				jsonObject.addProperty("name", user.getName());
