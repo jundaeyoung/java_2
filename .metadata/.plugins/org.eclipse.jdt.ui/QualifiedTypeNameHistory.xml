@@ -28,4 +28,13 @@
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.controller.CafeController"/>
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.dao.CafeDAO"/>
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.dto.CafeDTO"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonArray"/>
+    <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="ch01.dto.Todo"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
 </qualifiedTypeNameHistroy>

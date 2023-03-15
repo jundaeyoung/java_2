@@ -10,18 +10,20 @@ public class MainTest1 {
 		// select
 //		CafeDTO dto = cafeController.requstUserId("티모");
 //		System.out.println(dto);
-		
+//		
 		// delete
 //		int result = cafeController.requestDeleteUserName("티모");
 //		System.out.println(result);
 		
 		// insert
-//		int result = cafeController.requestInsertUserName("아리");
+//		int result = cafeController.requestInsertUserName("티모");
 //		System.out.println(result);
 		
+		
 		// update
-		int result = cafeController.requestUpdateUserName("르블랑","티모");
+		int result = cafeController.requestUpdateUserName("티모","르블랑");
 		System.out.println(result);
 
+		
 	} 
 }
