@@ -21,7 +21,7 @@ public class MainTest {
 		try {
 			url = new URL("https://jsonplaceholder.typicode.com/users");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-			conn.setRequestMethod("GET");
+			conn.setRequestMethod("POST");
 			conn.connect();
 			int statusCode = conn.getResponseCode();
 

@@ -1,6 +1,6 @@
 package ch01;
 
-import java.io.BufferedReader; 
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -8,16 +8,12 @@ import java.net.URL;
 
 import com.google.gson.Gson;
 
-public class MainTest3 {
+public class MainTest1 {
 	public static void main(String[] args) {
 
-		// URL
-		// i/o
-		// POST
-		// 값을 담았다면 콘솔창에 출력까지
 		URL url;
 		try {
-			url = new URL("https://jsonplaceholder.typicode.com/posts/19");
+			url = new URL("https://jsonplaceholder.typicode.com/albums/1");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.connect();
@@ -30,17 +26,15 @@ public class MainTest3 {
 				while ((line = reader.readLine()) != null) {
 					sb.append(line);
 				}
-
 				String str = sb.toString();
-//				System.out.println(sb.toString());
+				
 				Gson gson = new Gson();
-
-				Todo1 todo = gson.fromJson(str, Todo1.class);
-
-				System.out.println("userId : " + todo.getUserId());
-				System.out.println("id : " + todo.getId());
-				System.out.println("title : " + todo.getTitle());
-				System.out.println("body : " + todo.getBody());
+				
+				Albums albums = gson.fromJson(str, Albums.class);
+				
+				System.out.println("userId :" + albums.getUserId());
+				System.out.println("id :" + albums.getId());
+				System.out.println("title :" + albums.getTitle());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
