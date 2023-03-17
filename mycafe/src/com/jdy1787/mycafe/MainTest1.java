@@ -8,8 +8,8 @@ public class MainTest1 {
 	public static void main(String[] args) {
 		CafeController cafeController = new CafeController();
 		// select
-//		CafeDTO dto = cafeController.requstUserId("티모");
-//		System.out.println(dto);
+		CafeDTO dto = cafeController.requstUserId("티모");
+		System.out.println(dto);
 //		
 		// delete
 //		int result = cafeController.requestDeleteUserName("티모");
@@ -21,8 +21,8 @@ public class MainTest1 {
 		
 		
 		// update
-		int result = cafeController.requestUpdateUserName("티모","르블랑");
-		System.out.println(result);
+//		int result = cafeController.requestUpdateUserName("티모","르블랑");
+//		System.out.println(result);
 
 		
 	} 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="com.jdy1787.myblog.utils.DBHelper"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Result"/>
     <fullyQualifiedTypeName name="com.jdy1787.myblog.dto.BoardDTO"/>
@@ -19,9 +18,6 @@
     <fullyQualifiedTypeName name="com.jdy.blog.controller.UserController"/>
     <fullyQualifiedTypeName name="com.jdy.blog.dao.UserDao"/>
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.dao.ICafeDAO"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.service.CafeService"/>
     <fullyQualifiedTypeName name="com.jdy1787.mycafe.utils.DBHelper"/>
@@ -33,12 +29,6 @@
     <fullyQualifiedTypeName name="ch01.Todo"/>
     <fullyQualifiedTypeName name="ch01.Todo1"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonElement"/>
-    <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Type"/>
     <fullyQualifiedTypeName name="com.google.gson.reflect.TypeToken"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -46,4 +36,22 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="ch03.User"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="java.net.URL"/>
+    <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+    <fullyQualifiedTypeName name="ch01.Albums"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.controller.Albumscontroller"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.service.AlbumsService"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.dao.AlbumsDAO"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.dao.IAlbumsDAO"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.dto.AlbumsDTO"/>
+    <fullyQualifiedTypeName name="com.jdy.albums.utils.DBHelper"/>
 </qualifiedTypeNameHistroy>
